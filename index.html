@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- ETIQUETA PARA ENLAZAR NUESTRO ARCHIVO CSS -->
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <!-- MENU DE NAVEGACION -->
@@ -53,5 +53,27 @@
         </div>
       </div>
     </main>
+    <!-- Antes de crear el body -->
+     <script>
+        // vamos a solicitar un color de fondo
+        const colorFondo = prompt("Hola usuario, porfavor escribe un color en ingles");
+        console.log(colorFondo);
+        // Para modificar el color de fondo
+        document.body.style.background = colorFondo;
+
+        // PESO ES LA LUNA
+        // (PESO / 9.881) * 1,622
+        const peso = prompt("Ingreso tu peso en la tierra");
+        // COMO PROMPT NOS RETORNA UN STRING DEBEMOS CONVERTIR PESO A NUMBER
+        // parseInt(peso) == convetir numeros enteros
+        // parseDouble(peso) == convertir en numeros decimales
+        // Number(peso) == convierte cualquier tipo de numero
+        const result = (Number(peso) / 9.81) * 1.622;
+        //alert
+        alert("Tu peso en la luna es: " + result + "KG")
+
+        const saySaludo = prompt("Ingresa el saludo que gustes");
+        alert(saySaludo)
+     </script>
   </body>
 </html>
